@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site du SAD ELIKEN SERVICES"
+    />
+    <title>ELIKEN SERVICES SAD</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+
+    <script
+      defer
+      src="https://kit.fontawesome.com/5aa8bc0de3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./app.js"></script>
+
+    
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <!-------------------- HEADER -------------------->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="./assets/logo.png"
+            class="logo"
+            alt="Logo ELIKEN SERVICES"
+          />
+          <ul id="sidemenu">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#about">Qui Sommes-Nous ?</a></li>
+            <li><a href="#partenaire">Nos Partenaire</a></li>
+            <li><a href="./nousrejoindre.html">Nous Rejoindre</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>"Le choix d'une vie ordinaire"</p>
+          <h1>
+           Service d’Autonomie à domicile spécialisé pour les personnes en situation de handicap. <br>Bienvenue chez <span>ELIKEN SERVICES</span> 
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------- À PROPOS -------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <!-- photo Joana -->
+          <div class="about-col-1">
+            <img src="./assets/scoti.jpg" alt="photo de Scotty" />
+            <img src="./assets/regis.jpg" alt="photo de Regis" />
+          </div>
+
+          
+
+
+
+          <!-- Texte de présentation -->
+          <div class="about-col-2">
+            <h1 class="sub-title">Accueil</h1>
+            <p>
+              Bienvenue sur le site de notre Service d’Autonomie à Domicile – Haute-Savoie
+              Nous sommes un service spécialisé dans l’accompagnement des personnes en situation de handicap (Adultes) Autorisés à intervenir sur l’ensemble du département de la Haute-Savoie, nous favorisons le maintien à domicile en respectant les besoins, les droits et les projets de vie de chaque personne.
+              <br><br>
+              Nous proposons un accompagnement humain, professionnel et personnalisé, centré sur l’autonomie, la dignité et l’inclusion.
+              <br>
+              Notre équipe est à votre écoute pour toute demande d’information ou d’accompagnement.
+              <br><br>
+              Nous intervenons exclusivement sur le département de la Haute-Savoie (74).
+              Nos interventions sont planifiées en fonction de la localisation, des besoins exprimés et de la disponibilité de nos équipes.
+
+              N’hésitez pas à nous contacter pour vérifier notre possibilité d’intervention dans votre commune</p>
+
+                <div class="btn-container-gauche">
+                     <a href="#contact" class="btn btn3">Nous contacter</a>
+                </div>
+            <h1 class="sub-title">Qui Sommes-Nous ?</h1>
+            <p>
+              Notre Service d’Autonomie à Domicile (SAD) est une structure à taille humaine, dédiée à l’accompagnement des personnes en situation de handicap vivant à domicile.
+              Autorisé par les autorités compétentes, nous intervenons exclusivement sur le territoire de la Haute-Savoie.
+
+              Notre mission est guidée par des valeurs fortes : respect de la personne, écoute, autonomie et engagement social.
+              Notre équipe est composée de professionnel(le) sensibilisé(e)s aux réalités du handicap, mobilisés chaque jour pour proposer un service bienveillant, souple et adapté.
+
+            </p>
+
+            <!-- menu déroulant -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('valeurs')">
+                🌟 Valeurs
+              </p>
+              <p class="tab-links" onclick="opentab('missions')">🎯 Missions</p>
+              <p class="tab-links" onclick="opentab('prestation')">🤝 Prestations</p>
+            </div>
+
+            <!-- Valeurs -->
+            <div class="tab-contents active-tab" id="valeurs">
+              <ul>
+                <p>
+                  Nous plaçons l’humain au cœur de notre action. Nos valeurs fondent notre approche quotidienne :
+                </p>
+                  <li>🧑‍🤝‍🧑 Respect de la personne, de ses choix, de sa dignité.</li>
+                  <li>🗽 Autonomie comme finalité et fil conducteur de notre action.</li>
+                  <li>💙 Un projet qui fait passer la bientraitance en premier plan.</li>
+                  <li>🤝 L’écoute et la bienveillance envers chacun.</li>
+                  <li>🔒 Confidentialité et respect de la vie privée.</li>
+                  <li>🎯 Professionnalisme dans chaque accompagnement.</li>
+                  <li>🤲 Engagement pour une société inclusive.</li
+              </ul>
+
+
+
+
+            </div>
+       
+            <!-- Missions -->
+            <div class="tab-contents" id="missions">
+              <ul>
+                  <li>🏠 Favoriser le maintien à domicile dans des conditions sécurisées et dignes.</li>
+                  <li>👂 Être à l’écoute des aidants familiaux et faciliter leur quotidien.</li>
+                  <li>🧑‍🤝‍🧑 Favoriser le lien social et lutter contre l’isolement.</li>
+                  <li>🗣️ Informer et conseiller sur les dispositifs d’aide existants.</li>
+                  <li>🛡️ Proposer un accompagnement individualisé, dans le respect du projet de vie.</li>
+                  <li>🤲 Coordonner les interventions avec les acteurs médico-sociaux et sanitaires.</li>
+                  <li>🚗 Faciliter la participation sociale et la mobilité.</li>
+                  <li>🍽️ Aider à la préparation des repas et à la gestion du quotidien.</li>
+                  <li>🧹 Apporter un soutien pour l’entretien du logement et l’hygiène.</li>
+              </ul>
+            </div>
+
+            <!-- Engagements -->
+            <div class="tab-contents" id="prestation">
+            <ul>
+                <li>🧑‍🦼 Aide aux actes de la vie quotidienne (toilette, habillage, repas).</li>
+                <li>🚗 Aide à la mobilité (accompagnement aux rendez-vous, aux courses, aux activités sociales).</li>
+                <li>🧹 Assistance dans les tâches domestiques simples.</li>
+                <li>⏰ Interventions en journée et en soirée (adaptées aux besoins).</li>
+                <li>📝 Mise en œuvre de plans d’intervention personnalisés.</li>
+                <li>💬 Soutien relationnel et présence active.</li>
+              </ul>
+            <p> Chaque prestation est ajustée à la situation et au rythme de la personne accompagnée.
+                Selon les besoins, les souhaits et les projets de vie des personnes accompagnées, différentes modalités d’intervention peuvent être envisagées, en lien avec nos partenaires locaux.
+                Cela peut inclure un accompagnement dans un contexte de vie partagée, lorsque cela correspond aux attentes et aux envies de la personne.</p>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------partenaire------------
+
+-------- -->
+    <div id="partenaire">
+      <div class="container">
+        <h1 class="sub-title">Nos Partenaires :</h1>
+        <p>Les partenariats visent à favoriser l’inclusion, le lien social et l’épanouissement personnel, dans le respect des capacités et des envies de chacun. <br>
+
+        Ces collaborations enrichissent notre accompagnement en offrant des opportunités de participation sociale, essentielles au projet de vie des personnes que nous accompagnons.
+        <br>
+        Voici les differents types de partenariats qui permettent d'enrichir notre accompagent.
+        </p>
+        <div class="partenaire-list">
+          <div>
+            <span>
+              <h2>Acteurs médico-sociaux : </h2>
+            </span>
+            MDPH, Conseil départemental, professionnels de santé, paramédicaux 
+          </div>
+
+         <div>
+            <span>
+              <h2>Associations et structures spécialisées :
+              </h2>
+            </span>
+             Ce sont ceux avec qui nous coordonnons nos interventions pour garantir un suivi de qualité.
+          </div>
+          
+          <div>
+            <span>
+              <h2>Partenaires en activités adaptées :</h2>
+            </span>
+            Nous collaborons avec des structures locales proposant des activités culturelles, sportives, créatives ou de bien-être, spécifiquement pensées pour les personnes en situation de handicap.
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    
+    <!-- ----------------------CONTACT-------------------- -->
+    
+      <!-- ----------------------CONTACT-------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <p><i class="far fa-envelope"></i> elikenservices@hotmail.com</p>
+            <p><i class="fa-solid fa-paper-plane"></i> 4 Place des Arts, 74200 Thonon-les-Bains</p>
+            <p><i class="fa-solid fa-square-phone"></i> +33 6 95 06 75 71</p>
+            <div class="social-icons"></div>         
+          </div>
+          <div class="contact-right">
+            <form action="https://formsubmit.co/elikenservices@hotmail.com" method="POST">
+              <input type="text" name="Nom" placeholder="Nom" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea name="Message" rows="6" placeholder="Message" required></textarea>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://marouane749.github.io/ELIKENSERVICES/index.html">
+              <button type="submit" class="btn btn2">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <a href="mentions-legales.html" class="footer-legal-btn">Mentions légales & politique de confidentialité</a>
+        <p>
+          Copyright <i class="fa-regular fa-copyright"></i> 2025 ELIKEN SERVICES SAD
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
